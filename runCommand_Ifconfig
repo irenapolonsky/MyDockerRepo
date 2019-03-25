@@ -1,0 +1,31 @@
+==========================================================================================================command=====
+root@ip-10-0-3-41:/home/ubuntu/myDocker# docker run -d -P --name test_sshd irena:sshd | ifconfig
+==========================================================================================================output=====
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        inet6 fe80::42:42ff:fe55:dcaa  prefixlen 64  scopeid 0x20<link>
+        ether 02:42:42:55:dc:aa  txqueuelen 0  (Ethernet)
+        RX packets 13032  bytes 744026 (744.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13769  bytes 157634306 (157.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
+        inet 10.0.3.41  netmask 255.255.255.0  broadcast 10.0.3.255
+        inet6 fe80::86a:edff:fe92:9a38  prefixlen 64  scopeid 0x20<link>
+        ether 0a:6a:ed:92:9a:38  txqueuelen 1000  (Ethernet)
+        RX packets 3590442  bytes 1754424968 (1.7 GB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2755362  bytes 748313589 (748.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 408959  bytes 38911560 (38.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 408959  bytes 38911560 (38.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@ip-10-0-3-41:/home/ubuntu/myDocker#
